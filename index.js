@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
         
         // ${movie_id}
     axios
-    .get(`https://api.themoviedb.org/3/movie/${movie_id}?api_key=b161696b3276dff44b860ed47b927078&language=en-US&page=1`)
+    .get(`https://api.themoviedb.org/3/movie/${movie_id}?api_key=&language=en-US&page=1`)
     .then((movie_idResponse) => {
     
         const userChooseDetail=movie_idResponse.data;
